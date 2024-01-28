@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# displays the content of the file /etc/passwd
+
+while read -r username x userid x home_dir x; do
+    # Display the desired information
+    echo "Username: $username"
+    echo "User ID: $userid"
+    echo "Home Directory: $home_dir"
+    echo "-----------------------"
+done < "/etc/passwd"
